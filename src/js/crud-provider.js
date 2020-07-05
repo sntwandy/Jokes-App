@@ -32,8 +32,16 @@ const updateUser = async (id ,user) => {
     return await response.json();
 };
 
+const deleteUser = async (id) => {
+    const response = await fetch(`${urlCRUD}/${id}`, {
+        method: 'DELETE',
+    });
+    return (response.ok) ? 'Deleted' : 'Cant delete';
+};
+
 export {
     getUsers,
     createUser,
     updateUser,
+    deleteUser,
 }

@@ -4,7 +4,12 @@ import *as CRUD from './js/crud-provider';
     .then(console.log)
     .catch(console.log); */
 
-CRUD.createUser({
+/* CRUD.createUser({
+    name: 'Megan E.',
+    job: 'Criminology'
+}).then(console.log); */
+
+CRUD.updateUser(1, {
     name: 'Megan E.',
     job: 'Criminology'
 }).then(console.log);

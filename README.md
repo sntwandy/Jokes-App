@@ -15,4 +15,4 @@ npm start
 npm run build
 ```
 
-Develped by: @sntwandy
+Developed by: @sntwandy

@@ -1,6 +1,8 @@
-import { greeting } from './js/components';
-import './styles.css';
+const jokeUrl = 'https://api.chucknorris.io/jokes/random';
 
-const megan = 'Megan E.'
-
-greeting(megan);
+fetch(jokeUrl)
+    .then((response) => {
+        response.json().then(data => {
+            console.log(data);
+        })
+    });

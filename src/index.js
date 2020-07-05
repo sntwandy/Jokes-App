@@ -1,4 +1,5 @@
-import *as CRUD from './js/crud-provider';
+//import *as CRUD from './js/crud-provider';
+import { init } from './js/files-page';
 
 /* CRUD.getUsers(1)
     .then(console.log)
@@ -16,3 +17,5 @@ import *as CRUD from './js/crud-provider';
 
 /* CRUD.deleteUser(1)
     .then(console.log); */
+
+init();

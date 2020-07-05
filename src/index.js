@@ -1,9 +1,4 @@
-// import { init } from './js/joke-page';
-import { getUsers } from './js/http-provider';
-import { init } from './js/usuarios-page';
+import *as CRUD from './js/crud-provider';
 
-// init();
-/* getUsers()
-    .then(console.log)
-    .catch(console.log); */
-init();
+CRUD.getUsers(1)
+    .then(console.log);

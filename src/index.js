@@ -1,12 +1,3 @@
-const jokeUrl = 'https://api.chucknorris.io/jokes/random';
+import { init } from './js/joke-page';
 
-/* fetch(jokeUrl)
-    .then((response) => {
-        response.json().then(data => {
-            console.log(data);
-        })
-}); */
-
-fetch(jokeUrl)
-    .then(response => response.json())
-    .then( ( { id, value } ) => console.log(id, value) );
+init();
